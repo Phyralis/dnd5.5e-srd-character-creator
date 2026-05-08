@@ -1,0 +1,44 @@
+.table input[type=number] {
+    width: 100%;
+}
+
+tr {
+    vertical-align: middle;
+}
+
+.stat {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.btn {
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+}
+
+#playerLevel, #profBonus {
+    width: 60px;
+}
+
+body {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+input, select{
+    background-color: #42434d;
+    color: #ffffff;
+}
+
+.table td, .table th {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+#mid {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}

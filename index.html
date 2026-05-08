@@ -1,0 +1,170 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D 5E Character Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data/species.js" defer></script>
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+    <nav class="stepper-nav">
+
+        <button class="stepper-btn" id="prevBtn">&lt;</button>
+
+        <div class="step-indicators">
+            <button class="step active">1. SETUP</button>
+            <button class="step">2. SPECIES</button>
+            <button class="step">3. CLASS</button>
+            <button class="step">4. BACKGROUND</button>
+            <button class="step">5. ABILITIES</button>
+            <button class="step">6. EQUIPMENT</button>
+            <button class="step">7. REVIEW</button>
+        </div>
+
+        <button class="stepper-btn" id="nextBtn">&gt;</button>
+
+    </nav>
+
+    <main class="stepper-content">
+
+        <section class="step-content active" id="step1">
+
+            <h2>Character Info</h2>
+
+                <div class="character-header">
+                    <div class="portrait-container">
+                        <button class="portrait-btn" id="changePortrait">
+                            <img src="images/default-portrait.png" alt="Character Portrait" id="characterPortrait">
+                        </button>
+                        <input type="file" id="portraitUpload" accept="image/*" hidden>
+                    </div>
+
+                    <div class="name-container">
+                        <label for="characterName">Character Name</label>
+                        <input type="text" id="characterName" placeholder="Enter character name...">
+                    </div>
+                </div>
+
+            <div class="character-options">
+
+                <h2>Character Options</h2>
+
+                    <h3>Sources</h3>
+                        <p>During character creation you will only see options from sources enabled here.</p>
+
+                    <div class="option-row">
+                        <input type="checkbox" id="sourcePHB" checked>
+                        <label for="sourcePHB">Player's Handbook</label>
+                    </div>
+                    <div class="option-row">
+                        <input type="checkbox" id="sourceDMG">
+                        <label for="sourceDMG">Dungeon Master's Guide</label>
+                    </div>
+                    <div class="option-row">
+                        <input type="checkbox" id="sourceXGE">
+                        <label for="sourceXGE">Xanathar's Guide to Everything</label>
+                    </div>
+                    <div class="option-row">
+                        <input type="checkbox" id="sourceTCE">
+                        <label for="sourceTCE">Tasha's Cauldron of Everything</label>
+                    </div>
+
+                    <div class="option-row">
+                        <input type="checkbox" id="homebrewToggle">
+                        <label for="homebrewToggle">Homebrew Content</label>
+                    </div>
+                    
+                    <h3>Optional Features</h3>
+                        <p>Allow or restrict optional features for this character.</p>
+                            <div class="option-row">
+                                <input type="checkbox" id="optionalClassFeatures">
+                                <label for="optionalClassFeatures">Optional Class Features</label>
+                            </div>
+                            <div class="option-row">
+                                <input type="checkbox" id="customizeYourOrigin">
+                                <label for="customizeYourOrigin">Customize Your Origin</label>
+                            </div>
+
+                    <h3>Progression Type</h3>
+                        <p>Story-based character progression / XP-based character progression.</p>
+                        <div class="option-row option-row-vertical">
+                            <select id="progressionType">
+                                <option value="milestone">Milestone</option>
+                                <option value="xp">Experience Points (XP)</option>
+                            </select>
+                        </div>
+
+                    <h3>Encumbrance Type</h3>
+                        <p>Choose how item weights affect your character.</p>
+                        <div class="option-row option-row-vertical">
+                            <select id="encumbranceType">
+                                <option value="normalEncumbrance">Normal Encumbrance</option>
+                                <option value="variantEncumbrance">Variant Encumbrance</option>
+                                <option value="noEncumbrance">No Encumbrance</option>
+                            </select>
+                        </div>
+
+                    <h3>Ignore Coin Weight</h3>
+                        <p>Coins do not count against your total weight carried.</p>
+                        <div class="option-row">
+                            <input type="checkbox" id="ignoreCoinWeight">
+                            <label for="ignoreCoinWeight">Ignore Coin Weight</label>
+                        </div>
+
+            </div>
+
+        </section>
+
+        <section class="step-content" id="step2">
+            <h2>Species</h2>
+                <p>Choose your character's species.</p>
+                <div class="species-list">
+                </div>
+        </section>
+
+        <section class="step-content" id="step3">
+
+            <h2>Class</h2>
+            <p>Placeholder content</p>
+
+        </section>
+
+        <section class="step-content" id="step4">
+
+            <h2>Background</h2>
+            <p>Placeholder content</p>
+
+        </section>
+
+        <section class="step-content" id="step5">
+
+            <h2>Ability Scores</h2>
+            <p>Placeholder content</p>
+
+        </section>
+
+        <section class="step-content" id="step6">
+
+            <h2>Equipment</h2>
+            <p>Placeholder content</p>
+
+        </section>
+
+        <section class="step-content" id="step7">
+
+            <h2>Finalize Your Character</h2>
+            <p>Placeholder content</p>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
